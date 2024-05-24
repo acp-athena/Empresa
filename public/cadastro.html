@@ -10,28 +10,28 @@
 <body>
     <div class="container m-5">
         <form method="POST" action='/cadastro' class="border row g-3 needs-validation" novalidate>
-            <legend>Cadastro de Empresa</legend>
+            <h1>Cadastro de Empresa</h1>
             <div class="col-md-4">
-                <label for="cnpj" class="form-label">cnpj:</label>
-                <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+                <label for="cnpj" class="form-label">CNPJ:</label>
+                <input type="number" class="form-control" placeholder="Ex: XX. XXX. XXX/0001-XX" id="cnpj" name="cnpj" required>
             </div>
             <div class="col-md-4">
-                <label for="razaoSocial" class="form-label">Razão Socail</label>
-                <input type="text" class="form-control" id="razaoSocial" name="razaoSocial" required>
+                <label for="razaoSocial" class="form-label">Razão Social</label>
+                <input type="text" class="form-control" id="razaoSocial" placeholder="Ex: InovaTech Soluções Inteligentes Ltda." name="razaoSocial" required>
             </div>
             <div class="col-md-4">
                 <label for="nomeFantasia" class="form-label">Nome fantasia</label>
                 <div class="input-group has-validation">
-                <input type="text" class="form-control" id="nomeFantasia" name="nomeFantasia" aria-describedby="inputGroupPrepend" required>
+                <input type="text" class="form-control" placeholder="Ex: NuvemGenius Tecnologia & Inovação" id="nomeFantasia" name="nomeFantasia" aria-describedby="inputGroupPrepend" required>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="endereço" class="form-label">Endereço:</label>
-                <input type="text" class="form-control" id="endereço" name="endereço" required>
+                <input type="text" class="form-control" placeholder="Ex: Rua Exemplo nº00" id="endereço" name="endereço" required>
             </div>
             <div class="col-md-6">
                 <label for="cidade" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="cidade" name="cidade" required>
+                <input type="text" class="form-control" id="cidade" placeholder="Ex: São Paulo" name="cidade" required>
             </div>
             <div class="col-md-3">
                 <label for="uf" class="form-label">UF</label>
@@ -68,19 +68,19 @@
             </div>
             <div class="col-md-3">
                 <label for="cep" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="cep" name="cep" required>
+                <input type="text" class="form-control" placeholder="Ex: XXXXX-XXX" id="cep" name="cep" required>
             </div>
             <div class="col-md-4">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" placeholder="Ex: exemplo@exemplo.com" name="email" required>
             </div>
             <div class="col-md-4">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="number" class="form-control" id="telefone" name="telefone" required>
+                <input type="number" class="form-control" id="telefone" placeholder="Ex: 99999-9999" name="telefone" required>
             </div>
             <div class="col-12 mb-3">
                 <button class="btn btn-primary" type="submit">Cadastrar</button>
-                <a class="btn btn-secondary" href="/">Voltar</a>                   
+                <a href="/"><button class="btn btn-secondary">Voltar</a></button>                 
             </div>
         </form>
     </div>
