@@ -1,0 +1,16 @@
+{
+  "name": "cadastro_empresa",
+  "version": "1.0.0",
+  "description": "Atividade 3 da matéria Programação para a Internet",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ana Carolina Almeida Paula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

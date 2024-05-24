@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de empresas</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+</head>
+<body>
+    <div class="container m-5">
+        <form method="POST" action='/cadastro' class="border row g-3 needs-validation" novalidate>
+            <legend>Cadastro de Empresa</legend>
+            <div class="col-md-4">
+                <label for="cnpj" class="form-label">cnpj:</label>
+                <input type="text" class="form-control" id="cnpj" name="cnpj" required>
+            </div>
+            <div class="col-md-4">
+                <label for="razaoSocial" class="form-label">Razão Socail</label>
+                <input type="text" class="form-control" id="razaoSocial" name="razaoSocial" required>
+            </div>
+            <div class="col-md-4">
+                <label for="nomeFantasia" class="form-label">Nome fantasia</label>
+                <div class="input-group has-validation">
+                <input type="text" class="form-control" id="nomeFantasia" name="nomeFantasia" aria-describedby="inputGroupPrepend" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="endereço" class="form-label">Endereço:</label>
+                <input type="text" class="form-control" id="endereço" name="endereço" required>
+            </div>
+            <div class="col-md-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" name="cidade" required>
+            </div>
+            <div class="col-md-3">
+                <label for="uf" class="form-label">UF</label>
+                <select class="form-select" id="uf" name="uf" required>
+                    <option selected disabled value="">Estado</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep" required>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-md-4">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="number" class="form-control" id="telefone" name="telefone" required>
+            </div>
+            <div class="col-12 mb-3">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+                <a class="btn btn-secondary" href="/">Voltar</a>                   
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

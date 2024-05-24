@@ -1,0 +1,67 @@
+body {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" width="12px" height="12px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M98.7 271.7l439.7 440.6 439.7-440.6 50.3 50.3-490 490.7-490-490.7z"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+    background-size: 12px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+button {
+    padding: 15px 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-secondary {
+    background-color: #2196F3; /* Azul */
+}
